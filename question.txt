@@ -1,0 +1,48 @@
+
+Back-end
+• The API should be written in the NodeJS
+• You can use a JSON file which can have few to do items already in it. (5~10 items will be
+enough)
+
+
+• Each item should have the following properties at least:
+o ID
+o Text
+o Done or pending
+
+
+• One endpoint should provide all the “to do” items to the front-end.
+
+• Another endpoint can be used to update the “Done or pending” state of any to do item
+• Updates should be saved in the JSON file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Front-end
+• Front-end should be in ReactJS
+• The application should get all the “to do” items from the back-end API and present it on the
+screen
+• Each item should show somehow the “Done” or “Pending state”. For example, the done
+items can have a line-through text for example Write an email to the professor
+• Clicking on any item should update it’s “Done or pending” state.
+• You can style it however you feel good
+Things that we will pay attention to
+• Coding style
+• Testing
+• GIT history
+In case if you have any questions, feel free to contact me. 
