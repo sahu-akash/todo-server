@@ -1,5 +1,5 @@
 
-# ![Node/Express Todo backend Application]
+# [Node/Express Todo backend Application]
 
 
 # Getting started
