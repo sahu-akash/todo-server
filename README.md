@@ -1,6 +1,7 @@
 
 # [Node/Express Todo backend Application]
 
+https://github.com/sahu-akash/todo-client can be used as a frontend application for this code.
 
 # Getting started
 
@@ -8,7 +9,7 @@ To get the Node server running locally:
 
 - Clone this repo
 - `npm install` to install all required Dependencies
-- `npm run start-dev` to start the local server
+- `npm run start-dev` or npx nodemon main.js to start the local server
 
 
 ## Automated Testing
