@@ -4,21 +4,20 @@ on:
   workflow_dispatch:
     inputs:
       option1:
-        description: 'Select Option 1'
+        description: 'app filename'
         required: true
         type: choice
         options:
-          - choice1a
-          - choice1b
-          - choice1c
+          - vbp.json
+          - pm.json
+          - someone.json
       option2:
-        description: 'Select Option 2'
+        description: 'app flow'
         required: true
         type: choice
         options:
-          - choice2a
-          - choice2b
-          - choice2c
+          - upload
+          - download
 
 jobs:
   run-node-app:
