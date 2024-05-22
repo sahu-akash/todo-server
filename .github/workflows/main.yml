@@ -1,0 +1,42 @@
+name: Trigger Node Application
+
+on:
+  workflow_dispatch:
+    inputs:
+      option1:
+        description: 'Select Option 1'
+        required: true
+        type: choice
+        options:
+          - choice1a
+          - choice1b
+          - choice1c
+      option2:
+        description: 'Select Option 2'
+        required: true
+        type: choice
+        options:
+          - choice2a
+          - choice2b
+          - choice2c
+
+jobs:
+  run-node-app:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # Specify the Node.js version
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Node.js script
+        env:
+          OPTION1: ${{ github.event.inputs.option1 }}
+          OPTION2: ${{ github.event.inputs.option2 }}
+        run: node your-script.js
