@@ -1,4 +1,4 @@
-name: Trigger Node Application
+name: Trigger LanguageWire project
 
 on:
   workflow_dispatch:
@@ -29,7 +29,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16' # Specify the Node.js version
+          node-version: '20' # Specify the Node.js version
 
       - name: Install dependencies
         run: npm install
@@ -38,4 +38,7 @@ jobs:
         env:
           OPTION1: ${{ github.event.inputs.option1 }}
           OPTION2: ${{ github.event.inputs.option2 }}
+          OPTION3: 'username'
+          OPTION4: 'token'
+          
         run: node test.js
