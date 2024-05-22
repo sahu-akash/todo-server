@@ -38,4 +38,4 @@ jobs:
         env:
           OPTION1: ${{ github.event.inputs.option1 }}
           OPTION2: ${{ github.event.inputs.option2 }}
-        run: node your-script.js
+        run: node test.js
