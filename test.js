@@ -1,7 +1,7 @@
 // your-script.js
 const option1 = process.env.OPTION1;
 const option2 = process.env.OPTION2;
-const firstKey = process.env.KEY;
+const firstKey = process.env.FIRST_KEY;
 
 console.log(`Option 1 selected: ${option1}`);
 console.log(`Option 2 selected: ${option2}`);
