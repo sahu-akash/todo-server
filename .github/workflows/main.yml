@@ -44,5 +44,6 @@ jobs:
           OPTION2: ${{ github.event.inputs.option2 }}
           FIRST_KEY: ${{ vars.KEY }}
           OPTION4: 'token'
+          INPUT_STRING: ${{ github.event.inputs.inputString }}
           
         run: node test.js
