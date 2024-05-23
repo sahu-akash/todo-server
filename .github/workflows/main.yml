@@ -38,7 +38,7 @@ jobs:
         env:
           OPTION1: ${{ github.event.inputs.option1 }}
           OPTION2: ${{ github.event.inputs.option2 }}
-          FIRST_KEY: ${{ secrets.KEY }}
+          FIRST_KEY: ${{ env.KEY }}
           OPTION4: 'token'
           
         run: node test.js
