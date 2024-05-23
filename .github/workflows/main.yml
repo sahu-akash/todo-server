@@ -4,22 +4,23 @@ on:
   workflow_dispatch:
     inputs:
       option1:
-        description: 'app filename'
+        description: 'Application Name'
         required: true
         type: choice
         options:
-          - vbp.json
-          - pm.json
-          - someone.json
+          - ports-asset-fleet
+          - ports-dashboard
+          - ports-subscription
+          - ports-preventive-maintenance
       option2:
-        description: 'app flow'
+        description: 'Task'
         required: true
         type: choice
         options:
-          - upload
-          - download
+          - Upload file
+          - Download files
       inputString:
-        description: 'Enter the project ID'
+        description: 'Enter project ID'
         required: true
         type: string
 
