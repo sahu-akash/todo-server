@@ -18,6 +18,10 @@ on:
         options:
           - upload
           - download
+      inputString:
+        description: 'Enter the project ID'
+        required: true
+        type: string
 
 jobs:
   run-node-app:
